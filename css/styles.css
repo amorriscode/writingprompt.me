@@ -1,0 +1,12 @@
+body {
+  font-size: 45px;
+  text-align: center;
+  color: white;
+  background-color: red;
+  background-image:
+    radial-gradient(
+      circle,
+      red,
+      blue
+    );
+}
