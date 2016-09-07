@@ -1,12 +1,49 @@
-body {
+html {
   font-size: 45px;
   text-align: center;
   color: white;
-  background-color: red;
-  background-image:
+  width: 100%;
+  height: 100%;
+  background-color: #486d83;
+  background:
     radial-gradient(
       circle,
-      red,
-      blue
+      #486d83,
+      #133e52
     );
+}
+
+body {
+  padding: 0 50px;
+}
+
+#prompt {
+  margin: 45px;
+}
+
+a {
+  color: #133e52;
+  text-decoration: none;
+}
+
+button {
+  border: 2px solid white;
+  background: white;
+  color: #133e52;
+  font-size: 25px;
+  padding: 25px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#originalThread a {
+  color: white;
+  margin: 45px;
+  font-size: 15px;
+}
+
+#love {
+  color: #ff5757;
 }

@@ -3,12 +3,20 @@ function getWritingPrompt() {
 
   $.getJSON(url , function (response) {
     var title = response[0].data.children[0].data.title;
-    title = title.replace('[WP]', '');
+    title = title.replace(/\[(.*?)\]/, '');
     var url = response[0].data.children[0].data.url;
-    var commentCount = response[0].data.children[0].data.num_comments;
+    var commentCount = response[0].data.children[0].data.num_comments - 1;
 
     $('#prompt').html(title);
-    $('#comments').html('<a href="' + url + '">Human Comments (' + (Number(commentCount) - 1) + ')');
+
+    if (commentCount === 1) {
+      $('#comments').html('<a href="' + url + '">Read the ' + Number(commentCount) + ' amazing thing someone wrote.').show();
+    }
+    if (commentCount > 1) {
+      $('#comments').html('<a href="' + url + '">Read the ' + Number(commentCount) + ' amazing things others wrote.').show();
+    }
+
+    $('#originalThread').html('<a href="' + url + '"><em>Please give some <span id="love"><3</span> to the original thread.</em></a>');
   });
 };
 
