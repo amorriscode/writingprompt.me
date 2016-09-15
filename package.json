@@ -1,0 +1,24 @@
+{
+  "name": "writingprompt.me",
+  "version": "1.0.0",
+  "description": "Grab and display a random prompt from /r/writingprompts",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amorriscode/writingprompt.me.git"
+  },
+  "keywords": [
+    "writing",
+    "prompt",
+    "reddit"
+  ],
+  "author": "amorriscode",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amorriscode/writingprompt.me/issues"
+  },
+  "homepage": "https://github.com/amorriscode/writingprompt.me#readme"
+}
