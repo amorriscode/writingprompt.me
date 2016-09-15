@@ -1,5 +1,5 @@
 function getWritingPrompt() {
-  var url = "http://www.reddit.com/r/writingprompts/random.json";
+  var url = "https://www.reddit.com/r/writingprompts/random.json";
 
   $.getJSON(url , function (response) {
     var title = response[0].data.children[0].data.title;
